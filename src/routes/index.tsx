@@ -82,7 +82,7 @@ function Index() {
         <a href="#" aria-label="The Bionic Eye home"><img src={logo.url} className="brand-logo" alt="The Bionic Eye" /></a>
         <nav aria-label="Main navigation" className={`navigation ${menuOpen ? "is-open" : ""}`}>
           {navigation.map(([label, href]) => <a key={label} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}
-          <a className="shop-link" href="https://www.thebioniceye.co.uk/shop/" target="_blank" rel="noreferrer">Shop <ArrowUpRight size={15} aria-hidden="true" /></a>
+          <a className="shop-link" href="https://shop.thebioniceye.co.uk/" target="_blank" rel="noreferrer">Shop <ArrowUpRight size={15} aria-hidden="true" /></a>
         </nav>
         <Button variant="ghost" size="icon" className="menu-toggle" aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <X /> : <Menu />}</Button>
       </div>
@@ -151,7 +151,7 @@ function Index() {
       <div className="container">
         <div className="footer-top">
           <a href="#" aria-label="The Bionic Eye home"><img src={logo.url} alt="The Bionic Eye" className="brand-logo" loading="lazy" /></a>
-          <div><p>The Bionic Eye, Bionic House, Hall Farm, Berry Lane, Chorleywood, WD3 5EX, United Kingdom.</p><p>Telephone <a href="tel:+441753655886">+44 1753 655886</a>. Email <a href="mailto:info@thebioniceye.co.uk">info@thebioniceye.co.uk</a>.</p><p className="footer-brands">Specialist brands: FarmingByDrone | PowerWash | CleaningByDrone</p></div>
+          <div><p>The Bionic Eye, Bionic House, Hall Farm, Berry Lane, Chorleywood, WD3 5EX, United Kingdom.</p><p>Telephone <a href="tel:+441753655886">+44 1753 655886</a>. Email <a href="mailto:info@thebioniceye.co.uk">info@thebioniceye.co.uk</a>.</p><p className="footer-brands">Specialist brands: <a href="https://farmingbydrone.com/" target="_blank" rel="noreferrer">FarmingByDrone</a> | <a href="https://shop.thebioniceye.co.uk/collections/powerwash-pro-drones" target="_blank" rel="noreferrer">PowerWash</a> | <a href="https://cleaningbydrone.com/" target="_blank" rel="noreferrer">CleaningByDrone</a></p></div>
           <p>The Operational Authorisation is held by the operator and not the supplier. The Bionic Eye assists clients in attaining their own.</p>
         </div>
         <div className="footer-legal"><p>CAA approved since 2014. UK SORA authorisation held for cleaning operations with the PowerWash system since January 2026.</p><p>The Bionic Eye Ltd. Registered in England and Wales, company number 09053005. Registered office: 22 Wycombe End, Beaconsfield HP9 1NB.</p></div>
