@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight, ArrowDown, ArrowRight, Menu, X, Building2, Sun, Wind, Factory, Landmark, Paintbrush, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/BionicEyeLogoLargeBlack2.png.asset.json";
+import logo from "@/assets/BionicEyeLogoTrimmed.png.asset.json";
 import hero from "@/assets/C10_3.jpg.asset.json";
 import { SystemCarousel } from "@/components/SystemCarousel";
 import facade from "@/assets/865A0018.jpg.asset.json";
