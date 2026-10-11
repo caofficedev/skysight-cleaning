@@ -184,11 +184,11 @@ a { text-decoration: none; }
 .section p { font-size: 15px; line-height: 1.85; }
 .section p + p { margin-top: 22px; }
 .system-visual { background: var(--card); }
-.system-carousel { position: relative; }
+.system-carousel { position: relative; align-self: start; }
 .carousel-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; }
 .carousel-track::-webkit-scrollbar { display: none; }
 .carousel-slide { flex: 0 0 100%; scroll-snap-align: start; display: flex; align-items: center; justify-content: center; }
-.carousel-slide img { width: 100%; height: 430px; object-fit: contain; }
+.carousel-slide img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
 .carousel-arrow { position: absolute; top: 45%; transform: translateY(-50%); z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 50%; background: var(--background); color: var(--foreground); opacity: 0; transition: opacity 200ms; }
 .system-carousel:hover .carousel-arrow, .system-carousel:focus-within .carousel-arrow { opacity: 1; }
 .carousel-arrow:hover { border-color: var(--primary); color: var(--primary); }
