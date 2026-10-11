@@ -4,8 +4,7 @@ import { ArrowUpRight, ArrowDown, ArrowRight, Menu, X, Building2, Sun, Wind, Fac
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/BionicEyeLogoLargeBlack2.png.asset.json";
 import hero from "@/assets/C10_3.jpg.asset.json";
-import product from "@/assets/C10-5.webp.asset.json";
-import detail from "@/assets/C10-7.webp.asset.json";
+import { SystemCarousel } from "@/components/SystemCarousel";
 import facade from "@/assets/865A0018.jpg.asset.json";
 import field from "@/assets/IMG_2240.JPG.asset.json";
 import { enquirySchema, enquiryEmail } from "@/lib/enquiry";
@@ -109,7 +108,7 @@ function Index() {
               <p>Maximum take-off mass is 29 kg. The sub 25 kg limit that applied under the earlier authorisation route is not required under UK SORA.</p>
               <dl className="specification">{specifications.map(([label,value]) => <div className="spec-row" key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             </div>
-            <div className="system-visual"><img src={product.url} alt="ABZ Innovation C10 cleaning drone" loading="lazy" /><img className="detail-image" src={detail.url} alt="C10 nozzle and landing gear detail" loading="lazy" /></div>
+            <SystemCarousel />
           </div>
         </div>
       </section>
