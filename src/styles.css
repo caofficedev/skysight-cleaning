@@ -150,13 +150,13 @@
   }
 }
 
-html { scroll-behavior: smooth; scroll-padding-top: 112px; }
+html { scroll-behavior: smooth; scroll-padding-top: 124px; }
 body { margin: 0; }
 ::selection { background: var(--primary); color: var(--foreground); }
 h1,h2,h3,p { margin: 0; }
 h1,h2,h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 500; letter-spacing: 0; }
 a { text-decoration: none; }
-.site-header { background: var(--card); height: 112px; position: relative; z-index: 20; }
+.site-header { background: var(--card); height: 124px; position: relative; z-index: 20; }
 .container { max-width: 1280px; padding-inline: 64px; margin-inline: auto; }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .brand-logo { width: 178px; height: 110px; object-fit: contain; }
